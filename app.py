@@ -20,7 +20,7 @@ with open("classifier.pkl", "rb") as file:
 
 diabetes_dataset = pd.read_csv("diabetes.csv")
 
-X = diabetes_dataset.drop(columns="Outcome", axis=1)
+X = diabetes_dataset.drop(columns="Outcome")
 
 scaler = StandardScaler()
 scaler.fit(X)
